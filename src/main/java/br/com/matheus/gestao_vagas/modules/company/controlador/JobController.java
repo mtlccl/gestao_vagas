@@ -13,12 +13,12 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/job")
 public class JobController {
-    
+
     @Autowired
     private CreateTrabalhoCasosUsar createTrabalhoCasosUsar;
 
     @PostMapping("/")
-    public JobEntity create(@Valid @RequestBody JobEntity jobEntity){
+    public JobEntity create(@Valid @RequestBody JobEntity jobEntity) {
         return this.createTrabalhoCasosUsar.execute(jobEntity);
     }
 

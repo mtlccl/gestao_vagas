@@ -8,11 +8,11 @@ import br.com.matheus.gestao_vagas.modules.company.repositoriesJ.JobRepositorios
 
 @Service
 public class CreateTrabalhoCasosUsar {
-    
+
     @Autowired
     private JobRepositorios jobRepositorios;
 
-    public JobEntity execute(JobEntity jobEntity){
+    public JobEntity execute(JobEntity jobEntity) {
         return this.jobRepositorios.save(jobEntity);
     }
 }

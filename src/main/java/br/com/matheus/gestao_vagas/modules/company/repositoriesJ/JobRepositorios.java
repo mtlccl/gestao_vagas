@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.com.matheus.gestao_vagas.modules.company.entitys.JobEntity;
 
-public interface JobRepositorios extends JpaRepository<JobEntity, UUID>{
+public interface JobRepositorios extends JpaRepository<JobEntity, UUID> {
 }

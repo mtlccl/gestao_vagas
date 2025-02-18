@@ -15,13 +15,12 @@ import lombok.Data;
 @Entity(name = "company")
 @Data
 public class CompanyEntity {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-        
+
     private String name;
-    
 
     @NotBlank()
     @Pattern(regexp = "\\S+", message = "O campo [username] nao deve conter espaço")
