@@ -1,4 +1,4 @@
-package br.com.matheus.gestao_vagas.modules.company.useCases;
+package br.com.matheus.gestao_vagas.modules.company.dto;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AuthCompanyResponseDTO {
-    private String access_token;
-    private Long expires_in;
-    private List<String> roles;
+  private String access_token;
+  private Long expires_in;
+  private List<String> roles;
 }
